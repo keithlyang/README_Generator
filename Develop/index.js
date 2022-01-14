@@ -55,3 +55,10 @@ inquirer.prompt([
         message: 'What kind of question you have?',
       },
 ])
+.then((data) => {
+    const filename = `README.md`;
+
+    fs.writeFile(filename, generateMarkdown(data), (err) =>
+        err ? console.log(err) : console.log('Success!')
+    );
+});
