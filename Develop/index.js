@@ -10,7 +10,7 @@ inquirer.prompt([
       {
         type: 'input',
         name: 'descrition',
-        message: 'Write a short desription about your project',
+        message: 'Write a short desription about your project:',
       },
       {
         type: 'input',
@@ -35,12 +35,12 @@ inquirer.prompt([
       {
         type: 'input',
         name: 'github',
-        message: 'Enter your GitHub Username',
+        message: 'Enter your GitHub Username:',
       },
       {
         type: 'input',
-        name: 'What is your email?',
-        message: 'email',
+        name: 'email',
+        message: 'What is your email?',
       },
       {
         type: "list",
@@ -55,10 +55,3 @@ inquirer.prompt([
         message: 'What kind of question you have?',
       },
 ])
-.then((data) => {
-    const filename = `README.md`;
-
-    fs.writeFile(filename, generateMarkdown(data), (err) =>
-        err ? console.log(err) : console.log('Success!')
-    );
-});
