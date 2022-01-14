@@ -30,12 +30,12 @@ inquirer.prompt([
       {
         type: 'input',
         name: 'contribution',
-        message: 'How many contribution guidelines?',
+        message: 'How many contribution guidelines are there?',
       },
       {
         type: 'input',
         name: 'test',
-        message: 'How many test instructions?',
+        message: 'How many test instructions are there?',
       },
       {
         type: 'input',
@@ -97,19 +97,13 @@ There are ${input.contribution} contribution guidelines.
 
 There are ${input.text} applications.
 
-## Github
-
-Find me on Github: ${input.github}
-
-## Email
-
-Contact me: ${input.email}
-
 ## License
 
 ${input.license} License
 
 ## Questions
+
+If you have any questions, feel free to contact me via Github: https://github.com/${input.github} or you can email me at: ${input.email} 
 
 ${input.question}
 
