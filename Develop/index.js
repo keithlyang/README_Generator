@@ -1,11 +1,8 @@
-// TODO: Include packages needed for this application
-
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
 inquirer.prompt([
-    {
+      {
         type: 'input',
         name: 'name',
         message: 'What is your name?',
@@ -22,8 +19,18 @@ inquirer.prompt([
       },
       {
         type: 'input',
-        name: 'food',
-        message: 'What is your favorite food?',
+        name: 'usage',
+        message: 'What usage information are there?',
+      },
+      {
+        type: 'input',
+        name: 'contribution',
+        message: 'How many contribution guidelines?',
+      },
+      {
+        type: 'input',
+        name: 'test',
+        message: 'How many test instructions?',
       },
       {
         type: 'input',
@@ -32,16 +39,19 @@ inquirer.prompt([
       },
       {
         type: 'input',
-        name: 'linkedin',
-        message: 'Enter your LinkedIn URL.',
+        name: 'What is your email?',
+        message: 'email',
+      },
+      {
+        type: "list",
+        name: "license",
+        message: "license choose please:",
+        choices: ["MIT", "Eclipse", "IMB"],
+      
+      },
+      {
+        type: 'question',
+        name: 'question',
+        message: 'What kind of question you have?',
       },
 ])
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
