@@ -5,7 +5,7 @@ inquirer.prompt([
       {
         type: 'input',
         name: 'username',
-        message: 'What is your name?',
+        message: 'What is your full name?',
       },
       {
         type: 'input',
@@ -50,14 +50,14 @@ inquirer.prompt([
       {
         type: "list",
         name: "license",
-        message: "license choose please:",
-        choices: ["MIT", "Eclipse", "IMB"],
+        message: "Choice a License option please:",
+        choices: ["MIT", "Eclipse Public", "IMB", "Mozilla Public", "Apache", "Boost Software", "The Unlicense"],
       
       },
       {
         type: 'question',
         name: 'question',
-        message: 'What kind of question you have?',
+        message: 'Write down any question(s) you have?',
       },
 ])
 
@@ -73,7 +73,9 @@ inquirer.prompt([
       return `
 # ${input.title}
 
-# ${input.username}
+# Authors
+
+${input.username}
       
 ## Description
 
@@ -105,11 +107,11 @@ Contact me: ${input.email}
 
 ## License
 
-${list.license} License
+${input.license} License
 
 ## Questions
 
-${question.question}
+${input.question}
 
 `
 }
