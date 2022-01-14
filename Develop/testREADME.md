@@ -1,5 +1,5 @@
 
-# Readme Generator
+# README Generator
 
 # Authors
 
@@ -25,19 +25,13 @@ There are 0 contribution guidelines.
 
 There are undefined applications.
 
-## Github
-
-Find me on Github: keithlyang
-
-## Email
-
-Contact me: keithluckiyang@gmail.com
-
 ## License
 
 MIT License
 
 ## Questions
+
+If you have any questions, feel free to contact me via Github: https://github.com/keithlyang or you can email me at: keithluckiyang@gmail.com 
 
 No Questions
 
